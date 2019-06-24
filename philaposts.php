@@ -1,0 +1,1 @@
+<?php /* Template name: Cool Page*/>
