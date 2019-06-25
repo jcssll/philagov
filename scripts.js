@@ -8,12 +8,9 @@ fetch(url)
 	data.map(post => {
 		const innerContent = 
 		`
-		 <tr>
-    		<th>Title</th>
-    		<th>Date</th> 
-  		</tr>
+
   		<tr>
-    		<td><a href ="${post.link}"><h1>${post.title.rendered}</h1> </a></td>
+    		<td><a href ="${post.link}"><h1>${post.title.rendered}</h1></a></td>
   		</tr>
 
 		`
