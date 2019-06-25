@@ -1,0 +1,35 @@
+Array(10)
+0:
+author: 134
+categories: [85]
+comment_status: "closed"
+content: {	: "<p><strong>9AM Mayor Kenney to Speak at Shared Pub…North 18th St, 26th Floor, Philadelphia, PA.</p>↵", protected: false}
+date: "2019-06-24T15:51:24"
+date_gmt: "2019-06-24T19:51:24"
+excerpt: {rendered: "<p>9AM Mayor Kenney to Speak at Shared Public Spac…North 18th St, 26th Floor, Philadelphia, PA.</p>↵", protected: false}
+featured_media: 0
+format: "standard"
+guid: {rendered: "https://admin.phila.gov/?p=86474"}
+id: 86474
+link: "https://admin.phila.gov/2019-06-24-mayor-kenneys-public-schedule-for-tuesday-june-25-2019/"
+meta: {phila_page_icon: "", phila_template_select: "press_release"}
+modified: "2019-06-24T15:51:24"
+modified_gmt: "2019-06-24T19:51:24"
+ping_status: "closed"
+slug: "mayor-kenneys-public-schedule-for-tuesday-june-25-2019"
+status: "publish"
+sticky: false
+template: ""
+title:
+rendered: "Mayor Kenney’s Public Schedule for Tuesday, June 25, 2019"
+__proto__: Object
+type: "post"
+_links:
+about: Array(1)
+0:
+href: "https://admin.phila.gov/wp-json/wp/v2/types/post"
+__proto__: Object
+length: 1
+__proto__: Array(0)
+author: Array(1)
+0: {embeddab

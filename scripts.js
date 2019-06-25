@@ -8,10 +8,14 @@ fetch(url)
 	data.map(post => {
 		const innerContent = 
 		`
-		<li>
-			<h2>${post.title.rendered}</h2>
-			<a href = "${post.link}"></a>
-		</li>
+		 <tr>
+    		<th>Title</th>
+    		<th>Date</th> 
+  		</tr>
+  		<tr>
+    		<td><a href ="${post.link}"><h1>${post.title.rendered}</h1> </a></td>
+  		</tr>
+
 		`
 		postsContainer.innerHTML += innerContent;
 	})
