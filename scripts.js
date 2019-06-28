@@ -1,5 +1,6 @@
-const url = 'https://www.phila.gov/wp-json/wp/v2/posts/';
-const postsContainer = document.querySelector(".latest-post"); 
+const url = 'https://www.phila.gov/wp-json/wp/v2/posts?per_page=20';
+const postsContainerTitle = document.querySelector(".latest-post"); 
+
 
 fetch(url)
 .then(response => response.json())
@@ -8,13 +9,22 @@ fetch(url)
 	data.map(post => {
 		const innerContent = 
 		`
-
-  		<tr>
-    		<td><a href ="${post.link}"><h1>${post.title.rendered}</h1></a></td>
-  		</tr>
-
+ <div class="row">
+  <div class="column left" style="">
+  	<a href ="${post.link}"><h1>${post.title.rendered}</h1></a>
+    	<ul> 
+      		<div id="root" class = "latest-post"></div>
+    	</ul>
+  </div>
+  <div class="column right" style="">
+  	<h3 class="column right">${post.date}</h3></a>
+       
+  </div>
+</div>
 		`
-		postsContainer.innerHTML += innerContent;
+		postsContainerTitle.innerHTML += innerContent;
 	})
 
 }); 
+//get correct Date format
+

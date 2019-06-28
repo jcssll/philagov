@@ -20,7 +20,7 @@ html {
   max-width: 1200px;
   margin: 0 auto;
 }
-
+/*
 h1 {
   text-align: center;
   padding: 1.5rem 2.5rem;
@@ -28,6 +28,14 @@ h1 {
   margin: 0 0 2rem 0;
   font-size: 1.5rem;
   color: white;
+}
+*/
+h1{
+  color:black;
+}
+
+h3.column.right{
+  margin:0 0 0 239px;
 }
 
 img {
@@ -44,5 +52,34 @@ p {
 .container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.article{
+  list-style-type:none;
+}
+.article-date{
+  float:left;
+  
+  width:25%;
+  list-style-type:none;
+}
+.column{
+  float:left;
+  padding:10px;
+}
+
+.left{
+  width:75%;
+}
+.right{
+  width:15%;
+}
+/*after above code both divs left are stocked on top of each other*/
+
+/*Clear floats after the columns */
+.row:after {
+  content:"";
+  display:table;
+  clear:both;
 }
 
