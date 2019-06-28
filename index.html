@@ -8,30 +8,52 @@
 
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
   </head>
 
   <body>
-  <div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">PhilaGov Article Render</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Search</a></li>
+    </ul>
+  </div>
+</nav>
+
+      
+<div>
     <img src="city-of-philadelphia-white.PNG">
   </div>
-  <div class="row">
+
+<div class="md-form active-cyan-2 mb-3">
+  <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+</div>
+
+<div class="row latest-post list-group">
   <div class="column left" style="">
-  <h1 style="text-align:center;">Title</h1>
-    <ul> 
-      <div id="root" class = "latest-post"></div>
-    </ul>
+      <h1 style="text-align:center;">Title</h1>
   </div>
   <div class="column right" style="">
         <ul> 
-          <h1 style="">Date</h1>
-          </ul>
+          <h1 style="">Published</h1>
+        </ul>
   </div>
+  <hr class="title-hr">
 </div>
 
 <!--
     <input class="search-bar" style = "padding:5px; margin:15px;">Search</input>
     <div id="root" class = "latest-post"></div>
   -->
+  <div class="footer">
+<img style="height: 130px;" src="phila-gov.jpg">
+</div>
     <script src="scripts.js"></script>
   </body>
 </html>
