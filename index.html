@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="JsonDateExtensions.js"></script>
+  <script>
+    // use date parser for all JSON.parse() requests
+    // make sure to call before any JSON conversions
+    JSON.useDateParser();
+  </script>
 
   </head>
 
@@ -21,7 +27,6 @@
       <a class="navbar-brand" href="#">PhilaGov Article Render</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Search</a></li>
     </ul>
   </div>
 </nav>
@@ -32,7 +37,9 @@
   </div>
 
 <div class="md-form active-cyan-2 mb-3">
-  <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+  <!--<input class="form-control" type="text" placeholder="Search" aria-label="Search">-->
+  <!--Not able to see if search renders using browser php is a server-->
+ <?php require 'search.php';?> 
 </div>
 
 <div class="row latest-post list-group">
@@ -55,5 +62,46 @@
 <img style="height: 130px;" src="phila-gov.jpg">
 </div>
     <script src="scripts.js"></script>
+    
+    <!--  <script>
+    Vue.component('login-alert', {
+      template: '#template-alert',
+      data: function() {
+        return {
+          alertType : null,
+          title : null,
+          message : null,
+          showAlert : false
+        }
+      },
+      methods: {
+        close: function() {
+          this.alertType= null;
+          this.title= null;
+          this.message= null;
+          this.showAlert= false;
+        },
+        open: function(type, message) {
+          this.alertType= type;
+          this.title = type;
+          this.message= message;
+          this.showAlert= true;
+        }
+      }
+    });
+
+    var app = new Vue({
+      el: '#app',
+      methods: {
+        showme: function() {
+          var randomStatus = ['error', 'warning', 'success'];
+          var randomMessage = ['Lorem Ipsum', 'Adolor Sit Amet', 'Abed Meepo'];
+          var status = randomStatus[Math.floor(Math.random() * randomStatus.length)];
+          var message = randomMessage[Math.floor(Math.random() * randomMessage.length)];
+          this.$refs.refalert.open(status,message);
+        }
+      }
+    });
+    </script>-->
   </body>
 </html>
