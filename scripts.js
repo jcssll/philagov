@@ -15,7 +15,7 @@ fetch(url)
 
   </div>
   <div class="column right" style="">
-  	<h3 class="column right">${post.date}</h3></a>
+  	<h3  class="column right">${post.date}</h3></a>
   </div>
 </div>
 <hr class ="article-hr">
@@ -28,14 +28,3 @@ fetch(url)
 
 //get search 
 
-
-//get correct Date format
-/*
-Vue.filter('formatDate', function (date_str) {
-var year = date_str.substr(0,4),
-month = parseInt(date_str.substr(5,2)),
-day = date_str.substr(8,2),
-months = ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-return months[month] + " " + day + ", "+year;
-});
-*/
